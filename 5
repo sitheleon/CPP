@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+
+double calc(int i_a, double i_b) {
+	return i_a / i_b;
+}
+
+int main() {
+
+	cout.precision(10);
+	cout << fixed;
+
+	cout << "divide" << endl;
+	int a;
+	double b;
+
+	cout << "Input first number: ";
+	cin >> a;
+
+	if (a > 0) {
+		cout << "Input second number: ";
+		cin >> b;
+
+		cout << a << " / " << static_cast<int>(b) << " = " << calc(a, b);
+	}
+	else {
+		cout << "a is less than 0. try number bigger than 0." << endl;
+
+		return 0;
+	}
+
+
+}
