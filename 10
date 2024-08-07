@@ -1,0 +1,33 @@
+#include <iostream>
+#include<string>
+
+using namespace std;
+
+
+
+int main() {
+
+	int a, b;
+
+	cout << "Input A: ";
+	cin >> a;
+	cout << "Input B: ";
+	cin >> b;
+	
+	int b1 = b % 10; // b 일의 자리수
+	int b2 = (b / 10) % 10; // b 십의 자리수
+	int b3 = b / 100; // b 백의 자리수
+
+	int res1 = a * b1;
+	int res2 = a * b2;
+	int res3 = a * b3;
+	int res = a * b;
+
+
+	cout << res1 << endl;
+	cout << res2 << endl;
+	cout << res3 << endl;
+	cout << res << endl;
+
+	return 0;
+}
