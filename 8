@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+
+int calc(int _ori) {
+
+	return _ori - 543;
+}
+
+int main() {
+	int ori;
+	cout << "불멸기원(佛滅紀元) 연도 입력: ";
+	cin >> ori;
+
+	if (1000 <= ori <= 3000) {
+		cout << "서기 연도: " << calc(ori) << endl;
+	}
+	else {
+		cout << "불멸기원(佛滅紀元) 연도는 1000년부터 3000년 사이로 입력해야 합니다.";
+		return 0;
+	}
+
+}
