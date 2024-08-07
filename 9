@@ -1,0 +1,31 @@
+#include <iostream>
+#include<string>
+
+using namespace std;
+
+
+
+int main() {
+
+	int a, b, c;
+
+	cout << "Input A: ";
+	cin >> a;
+	cout << "Input B: ";
+	cin >> b;
+	cout << "Input C: ";
+	cin >> c;
+
+
+	cout << (a + b) % c;
+	cout << endl;
+
+	cout << ((a % c) + (b % c)) % c;
+	cout << endl;
+
+	cout << (a * b) % c;
+	cout << endl;
+
+	cout << ((a % c) * (b % c)) % c;
+	cout << endl;
+}
